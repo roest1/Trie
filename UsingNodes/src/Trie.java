@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Trie {
     public static void main (String [] args) throws FileNotFoundException {
-        File file = new File("/Users/rileyoest/VS_Code/Trie/src/WORDS.LST");
+        File file = new File("/Users/rileyoest/VS_Code/Trie/Files/WORDS.LST");
         Scanner scan = new Scanner(file);
         Node trie = new Node();
         while(scan.hasNext()){
@@ -13,7 +13,7 @@ public class Trie {
                 trie.insert(trie.root, word);
             }
         }
-        File queryFile = new File("/Users/rileyoest/VS_Code/Trie/src/inputFile.txt");
+        File queryFile = new File("/Users/rileyoest/VS_Code/Trie/Files/inputFile.txt");
         scan = new Scanner(queryFile);
         String prefix = scan.next();
         String forbidden = scan.next();
